@@ -1,0 +1,6 @@
+{
+  "name": "Renê Cortes",
+  "description": "Landing page de alta costura para a barbearia premium Renê Cortes. Estética refinada, preta e dourada.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

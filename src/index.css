@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-decorative: "Cinzel Decorative", serif;
+  --font-cursive: "Great Vibes", cursive;
+  
+  --color-gold-dark: #A37F2F;
+  --color-gold-base: #C9A646;
+  --color-gold-light: #E2C76B;
+  --color-gold-cream: #F5E6BE;
+  --color-dark-deep: #070707;
+  --color-dark-soft: #111111;
+  --color-cream-soft: #F5F1E8;
+  --color-gray-txt: #B8B8B8;
+}
+
+/* Custom scrollbar matching the premium black and gold aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9A646;
+  border: 3px solid #070707;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E2C76B;
+}
+
+/* Subtle Dark Marble Texture Generator using CSS gradients and noise */
+@layer utilities {
+  .bg-marble {
+    background-color: #070707;
+    background-image: 
+      radial-gradient(ellipse at 30% 20%, rgba(201, 166, 70, 0.03) 0%, rgba(0, 0, 0, 0) 50%),
+      radial-gradient(ellipse at 80% 70%, rgba(201, 166, 70, 0.02) 0%, rgba(0, 0, 0, 0) 40%),
+      linear-gradient(rgba(17, 17, 17, 0.3) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(17, 17, 17, 0.3) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 80px 80px, 80px 80px;
+  }
+  
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #E2C76B 0%, #C9A646 50%, #A37F2F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .border-gold-gradient {
+    border-image: linear-gradient(135deg, #E2C76B 0%, #C9A646 50%, #A37F2F 100%) 1;
+  }
+}
+
+/* High-end smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gold button pulse transition */
+@keyframes goldGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(201, 166, 70, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(201, 166, 70, 0.4);
+  }
+}
+
+.animate-gold-glow {
+  animation: goldGlow 3s infinite ease-in-out;
+}
+
