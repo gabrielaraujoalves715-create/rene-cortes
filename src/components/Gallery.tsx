@@ -6,7 +6,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Maximize2, X, Sparkles } from "lucide-react";
-import corteInfantil from "../assets/images/corte-Infantil.png";
+import corteInfantil from "../assets/images/corte-infantil.png";
 interface GalleryItem {
   id: string;
   image: string;
