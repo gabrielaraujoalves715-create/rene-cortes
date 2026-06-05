@@ -84,8 +84,6 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center w-full sm:w-auto px-10 py-4.5 bg-[#C9A646] hover:bg-transparent border border-[#C9A646] text-[#070707] hover:text-[#C9A646] font-sans text-xs sm:text-sm font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-[0_4px_25px_rgba(201,166,70,0.25)] hover:shadow-[0_0_35px_rgba(201,166,70,0.6)] cursor-pointer"
             >
-              {/* Button light flare effect */}
-              <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-full"></span>
               <CalendarDays className="mr-3 h-4 w-4 transition-transform group-hover:rotate-12 duration-300" />
               Agendar agora no WhatsApp
             </a>
