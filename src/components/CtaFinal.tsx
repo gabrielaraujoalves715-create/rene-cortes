@@ -6,6 +6,7 @@
 import { motion } from "motion/react";
 import { MessageSquare, CalendarCheck } from "lucide-react";
 import { BARBERSHOP_DATA } from "../types";
+import barberHero from "../assets/images/barber_hero_1780605718009.png";
 
 export default function CtaFinal() {
   const whatsappUrl = `https://wa.me/${BARBERSHOP_DATA.whatsappNumber.replace(
@@ -18,7 +19,7 @@ export default function CtaFinal() {
       {/* Background Image styling with high density overlay filters */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/barber_hero_1780605718009.png"
+          src={barberHero}
           alt="Renê Cortes Premium Ambiance"
           className="w-full h-full object-cover object-center select-none filter brightness-[45%] contrast-[115%] grayscale-[10%]"
           referrerPolicy="no-referrer"

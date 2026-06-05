@@ -32,6 +32,12 @@ export interface GalleryItem {
   title: string;
 }
 
+import serviceHaircut from "./assets/images/service_haircut_1780605734929.png";
+import serviceBarba from "./assets/images/service_barba_1780605749035.png";
+import serviceCombo from "./assets/images/service_combo_1780605762814.png";
+import barberTools from "./assets/images/barber_tools_1780605778088.png";
+import barberHero from "./assets/images/barber_hero_1780605718009.png";
+
 export const BARBERSHOP_DATA = {
   name: "Renê Cortes",
   concept: "Barbearia Premium",
@@ -51,28 +57,28 @@ export const BARBERSHOP_DATA = {
       title: "Corte Masculino",
       price: "R$ 75",
       description: "Cortes modernos e clássicos executados com precisão e atenção aos detalhes.",
-      image: "/src/assets/images/service_haircut_1780605734929.png"
+      image: serviceHaircut
     },
     {
       id: "srv-2",
       title: "Barba Completa",
       price: "R$ 60",
       description: "Modelagem, navalha e finalização para uma barba alinhada e bem cuidada.",
-      image: "/src/assets/images/service_barba_1780605749035.png"
+      image: serviceBarba
     },
     {
       id: "srv-3",
       title: "Corte + Barba",
       price: "R$ 120",
       description: "A combinação ideal para um visual completo, limpo e refinado com preço especial.",
-      image: "/src/assets/images/service_combo_1780605762814.png"
+      image: serviceCombo
     },
     {
       id: "srv-4",
       title: "Acabamento Premium",
       price: "R$ 40",
       description: "Finalização cuidadosa, sobrancelhas e contorno para manter seu estilo sempre alinhado.",
-      image: "/src/assets/images/barber_tools_1780605778088.png"
+      image: barberTools
     }
   ] as ServiceItem[],
   whyChooseUs: [
@@ -124,37 +130,37 @@ export const BARBERSHOP_DATA = {
   gallery: [
     {
       id: "gal-1",
-      image: "/src/assets/images/service_haircut_1780605734929.png",
+      image: serviceHaircut,
       tag: "Haircut",
       title: "Degradê Americano"
     },
     {
       id: "gal-2",
-      image: "/src/assets/images/service_barba_1780605749035.png",
+      image: serviceBarba,
       tag: "Beard",
       title: "Terapia de Barba"
     },
     {
       id: "gal-3",
-      image: "/src/assets/images/service_combo_1780605762814.png",
+      image: serviceCombo,
       tag: "Combo",
       title: "Grooming Premium"
     },
     {
       id: "gal-4",
-      image: "/src/assets/images/barber_tools_1780605778088.png",
+      image: barberTools,
       tag: "Studio",
       title: "Equipamentos de Precisão"
     },
     {
       id: "gal-5",
-      image: "/src/assets/images/barber_hero_1780605718009.png",
+      image: barberHero,
       tag: "Ambiente",
       title: "Luxo & Conforto"
     },
     {
       id: "gal-6",
-      image: "/src/assets/images/service_haircut_1780605734929.png", // reusing but beautifully styled
+      image: serviceHaircut, // reusing but beautifully styled
       tag: "Clássico",
       title: "Corte Executivo"
     }

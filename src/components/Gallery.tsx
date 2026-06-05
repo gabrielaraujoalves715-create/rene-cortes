@@ -6,7 +6,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Maximize2, X, Sparkles } from "lucide-react";
-import corteInfantil from "../assets/images/corte-kids.png";
+
+import corteKids from "../assets/images/corte-kids.png";
+import galleryClassicGrey from "../assets/images/corte-sociall.png";
+import galleryHotTowel from "../assets/images/terapia-barba.png";
+import galleryKidsStyle from "../assets/images/corte-infantil.png";
 interface GalleryItem {
   id: string;
   image: string;
@@ -20,27 +24,27 @@ export default function Gallery() {
   const galleryItems: GalleryItem[] = [
     {
       id: "gal-1",
-      image: corteInfantil,
+      image: corteKids,
       tag: "Corte",
-      title: "Corte com Tesoura & Navalha"
+      title: "Corte com Tesoura",
     },
     {
       id: "gal-2",
-      image: "/src/assets/images/gallery_hot_towel_1780608023194.png",
+      image: galleryHotTowel,
       tag: "Toalha Quente",
-      title: "Terapia de Barba & Relaxamento"
+      title: "Terapia de Barba & Relaxamento",
     },
     {
       id: "gal-3",
-      image: "/src/assets/images/gallery_kids_style_1780608058283.png",
-      tag: "Kids",
-      title: "Estilo Infantil & Degradê"
+      image: galleryKidsStyle,
+      tag: "Corte Infantil",
+      title: "Corte Infantil",
     },
     {
       id: "gal-4",
-      image: "/src/assets/images/gallery_classic_grey_1780608076685.png",
-      tag: "Social",
-      title: "Corte Social Clássico & Grisalho"
+      image: galleryClassicGrey,
+      tag: "Corte Clássico",
+      title: "Corte Social Masculino",
     }
   ];
 

@@ -7,6 +7,7 @@ import { motion } from "motion/react";
 import { ChevronDown, CalendarDays } from "lucide-react";
 import { BARBERSHOP_DATA } from "../types";
 import Logo from "./Logo";
+import barberHero from "../assets/images/barber_hero_1780605718009.png";
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${BARBERSHOP_DATA.whatsappNumber.replace(
@@ -25,7 +26,7 @@ export default function Hero() {
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1.05, opacity: 0.55 }}
           transition={{ duration: 3, ease: "easeOut" }}
-          src="/src/assets/images/barber_hero_1780605718009.png"
+          src={barberHero}
           alt="Renê Cortes Premium Barber Shop"
           className="w-full h-full object-cover object-center select-none"
           referrerPolicy="no-referrer"

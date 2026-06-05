@@ -5,6 +5,10 @@
 
 import { motion } from "motion/react";
 import { BARBERSHOP_DATA } from "../types";
+import serviceHaircut from "../assets/images/service_haircut_1780605734929.png";
+import serviceBarba from "../assets/images/service_barba_1780605749035.png";
+import serviceCombo from "../assets/images/service_combo_1780605762814.png";
+import barberTools from "../assets/images/barber_tools_1780605778088.png";
 
 export default function Services() {
   const services = [
@@ -12,25 +16,25 @@ export default function Services() {
       id: "srv-1",
       title: "Corte Masculino",
       description: "Cortes modernos e clássicos executados com precisão milimétrica.",
-      image: "/src/assets/images/service_haircut_1780605734929.png"
+      image: serviceHaircut
     },
     {
       id: "srv-2",
       title: "Barba Completa",
       description: "Modelagem, navalha quente e finalização impecável.",
-      image: "/src/assets/images/service_barba_1780605749035.png"
+      image: serviceBarba
     },
     {
       id: "srv-3",
       title: "Corte + Barba",
       description: "A combinação perfeita para um visual completo e refinado.",
-      image: "/src/assets/images/service_combo_1780605762814.png"
+      image: serviceCombo
     },
     {
       id: "srv-4",
       title: "Acabamento Premium",
       description: "Tratamentos exclusivos com produtos de alta performance.",
-      image: "/src/assets/images/barber_tools_1780605778088.png"
+      image: barberTools
     }
   ];
 
