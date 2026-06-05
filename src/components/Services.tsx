@@ -38,10 +38,9 @@ export default function Services() {
     }
   ];
 
-  const whatsappUrl = `https://wa.me/${BARBERSHOP_DATA.whatsappNumber.replace(
-    /[+ ]/g,
-    ""
-  )}?text=${encodeURIComponent(BARBERSHOP_DATA.whatsappMessage)}`;
+  const whatsappNumber = "5511924629412";
+  const whatsappMessage = "Olá, vim pelo site da Renê Cortes e gostaria de agendar um horário.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section id="servicos" className="relative py-14 sm:py-20 bg-[#070707] overflow-hidden">

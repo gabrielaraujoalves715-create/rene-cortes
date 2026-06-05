@@ -7,10 +7,9 @@ import { motion } from "motion/react";
 import { BARBERSHOP_DATA } from "../types";
 
 export default function WhatsAppButton() {
-  const whatsappUrl = `https://wa.me/${BARBERSHOP_DATA.whatsappNumber.replace(
-    /[+ ]/g,
-    ""
-  )}?text=${encodeURIComponent(BARBERSHOP_DATA.whatsappMessage)}`;
+  const whatsappNumber = "5511924629412";
+  const whatsappMessage = "Olá, vim pelo site da Renê Cortes e gostaria de agendar um horário.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="fixed bottom-6 right-6 z-40">

@@ -43,10 +43,10 @@ export const BARBERSHOP_DATA = {
   concept: "Barbearia Premium",
   tagline: "Seu estilo começa aqui",
   description: "Cortes premium, barba impecável e atendimento de alto nível",
-  whatsappNumber: "551192462-9412", // Updated with user phone
+  whatsappNumber: "5511924629412", // Updated with user phone
   whatsappMessage: "Olá, vim pelo site da Renê Cortes e gostaria de agendar um horário.",
   address: "Rua costa do marfim, 270 — Jardim Sao Manuel, São Paulo - SP, 05871-280",
-  phoneDisplay: "551192462-9412",
+  phoneDisplay: "5511924629412",
   hours: [
     { days: "Segunda a sexta", time: "09h às 20h" },
     { days: "Sábado", time: "08h às 18h" },

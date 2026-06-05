@@ -9,10 +9,9 @@ import { BARBERSHOP_DATA } from "../types";
 import barberHero from "../assets/images/barber_hero_1780605718009.png";
 
 export default function CtaFinal() {
-  const whatsappUrl = `https://wa.me/${BARBERSHOP_DATA.whatsappNumber.replace(
-    /[+ ]/g,
-    ""
-  )}?text=${encodeURIComponent(BARBERSHOP_DATA.whatsappMessage)}`;
+  const whatsappNumber = "5511924629412";
+  const whatsappMessage = "Olá, vim pelo site da Renê Cortes e gostaria de agendar um horário.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="relative py-16 sm:py-22 bg-[#070707] overflow-hidden">
